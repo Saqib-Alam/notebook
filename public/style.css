@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+.notebookBody{
+    border: 5px solid #DF010E;
+    width: 600px;
+    min-height: 600px !important;
+    border-radius: 5px;
+}
+h1{
+    /* width: 240px; */
+    margin-bottom: 20px;
+    color: #DF010E;
+    font-weight: bold;
+}
+
+.noteBookSec{
+    padding: 20px 10px 0 10px;
+}
+
+.fas{
+    font-size: 20px;
+    border: none;
+    color: #DF010E;
+    background: transparent;
+    width: 110px;
+    height: 45px;
+}
+
+.inpBtn{
+    font-size: 28px;
+}
+
+.noteInp{
+      height: 50px;
+      border: none;
+      font-size: 24px !important;
+      font-weight: 600 !important;
+      border-bottom: 2px solid #000;
+      background-color: transparent;
+}
+
+.noteInp:focus{
+    outline: transparent;
+}
+/* .noteBox{
+    background-color: aquamarine;
+} */
+
+.noteBox div{
+
+    display: flex;
+    flex-direction: column;
+    margin: 5px 15px;
+    width: 96% !important;
+    border-bottom: 1px solid #DF010E;
+    padding: 60px auto;
+    font-size: 20px;
+}
+
+.title{
+    font-size: 28px !important;
+    font-weight: bold !important;
+}
+
+.description{
+    font-size: 16px !important;
+}
+
+
+@media screen and (max-width: 768px){
+    .notebookBody{
+        width: 550px;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .notebookBody{
+        width: 100%;
+    }
+
+    .todoInp{
+        width: 100% !important;
+    }
+}

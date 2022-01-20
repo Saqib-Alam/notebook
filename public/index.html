@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="myTodo d-flex flex-column justify-content-center align-items-center">
+        
+        <div class="notebookBody">
+            <div class="d-flex justify-content-center">
+                <!-- <img class="todoLogo" src="todocheck-logo.png_w=1098&ssl=1" alt=""> -->
+
+                <h1>NoteBook</h1>
+            </div>
+            <div class="noteBookSec d-flex flex-column mb-5">
+               <input class="noteInp px-2 mx-2" id="inpTitle" type="text" placeholder="Title...!">
+               <input class="noteInp px-2 mx-2" id="inpDescription" type="text" placeholder="Description...!">
+               <span class=" d-flex justify-content-center">
+                   <button onclick="addNote()" id="addBtn" class="inpBtn fas fa-plus-square mx-2"></button>
+                   <button onclick="delAll()" id="delBtn" class="inpBtn fas fa-trash-alt mx-2"></button>
+               </span>
+            </div>
+    
+            <div class="">
+                <div class="noteBox" id="noteBox">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./bootstrap-4.6.1-dist/js/jquery-3.5.1.slim.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/popper.min.js"></script>
+<script src="./bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+</html>
